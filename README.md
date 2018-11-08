@@ -23,3 +23,7 @@ Run this project by this command :
     ```$xslt
     curl -i -X PUT -H "Content-Type: application/json" -d '{"prod_desc":"Microsoft XBox One"}' localhost:3000/products/58a9115abed027087df7133b
     ```
+7. Finally, we are testing for delete one product by id using this command.
+    ```$xslt
+    curl -i -X DELETE localhost:3000/products/5b2648abf8c8a90311129814
+    ```
