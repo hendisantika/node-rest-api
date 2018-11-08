@@ -6,6 +6,8 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var products = require('./routes/products');
+app.use('/products', products);
 
 var app = express();
 
@@ -16,6 +18,7 @@ mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/product')
     .then(() => console.log('connection successfull!'))
     .catch((err) => console.error(err));
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
