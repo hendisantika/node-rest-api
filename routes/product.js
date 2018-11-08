@@ -19,3 +19,10 @@ router.get('/:id', function (req, res, next) {
     });
 });
 
+/* SAVE PRODUCT */
+router.post('/', function (req, res, next) {
+    Product.create(req.body, function (err, post) {
+        if (err) return next(err);
+        res.json(post);
+    });
+});
