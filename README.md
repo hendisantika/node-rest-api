@@ -15,3 +15,7 @@ Run this project by this command :
     ```
     curl -i -H "Accept: application/json" localhost:3000/products
     ```
+5. Next, we are testing to get one product by id using this command.
+    ```$xslt
+    curl -i -H "Accept: application/json" localhost:3000/products/5b2648abf8c8a90311129814
+    ```
