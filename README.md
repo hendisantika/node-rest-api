@@ -27,3 +27,5 @@ Run this project by this command :
     ```$xslt
     curl -i -X DELETE localhost:3000/products/5b2648abf8c8a90311129814
     ```
+    
+Source of article --> [click here](https://www.djamware.com/post/58a91cdf80aca748640ce353/how-to-create-rest-api-easily-using-nodejs-expressjs-mongoosejs-and-mongodb)
