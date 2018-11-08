@@ -11,3 +11,7 @@ Run this project by this command :
    ```
    curl -i -X POST -H "Content-Type: application/json" -d '{ "prod_name":"Sony PS 4","prod_desc":"Sony playstation 4","prod_price": 580 }' localhost:3000/products
    ```
+4. Next, we are testing to get all products data using this command :
+    ```
+    curl -i -H "Accept: application/json" localhost:3000/products
+    ```
