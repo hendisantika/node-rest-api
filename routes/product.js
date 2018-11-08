@@ -26,3 +26,11 @@ router.post('/', function (req, res, next) {
         res.json(post);
     });
 });
+
+/* UPDATE PRODUCT */
+router.put('/:id', function (req, res, next) {
+    Product.findByIdAndUpdate(req.params.id, req.body, function (err, post) {
+        if (err) return next(err);
+        res.json(post);
+    });
+});
