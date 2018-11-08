@@ -19,3 +19,7 @@ Run this project by this command :
     ```$xslt
     curl -i -H "Accept: application/json" localhost:3000/products/5b2648abf8c8a90311129814
     ```
+6. Next, we are editing and update one of a product by id using this command. First, copy id from one of product from the response before then paste it as the parameter.
+    ```$xslt
+    curl -i -X PUT -H "Content-Type: application/json" -d '{"prod_desc":"Microsoft XBox One"}' localhost:3000/products/58a9115abed027087df7133b
+    ```
